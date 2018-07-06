@@ -1,75 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8" />
-        <title>first_post</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+    <title>first_post</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="first_post"/>
+            <meta property="og:url" content="/first_post.html"/>
+            <!--meta property="og:description" content="Hello world from pelican!"/-->
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/style.css">  
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+    <!--link href="/theme/css/pygments.css" rel="stylesheet"-->
+    <link href="/theme/css/prism.css" rel="stylesheet" />
+  
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.pageslide.css">
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">test </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/test.html">test</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/first_post.html" rel="bookmark"
-           title="Permalink to first_post">first_post</a></h1>
-    </header>
+<div class="wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-9 col-xs-12">
 
-    <div class="entry-content">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h2>
+                    <a href="/first_post.html"
+                       rel="bookmark"
+                       title="Permalink to first_post">
+                        first_post
+                    </a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
 <footer class="post-info">
-        <abbr class="published" title="2018-08-10T20:42:00+08:00">
-                Published: Fri 10 August 2018
-        </abbr>
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Fri 10 August 2018
+    </span>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yw.html">yw</a>
-        </address>
-<p>In <a href="/category/test.html">test</a>.</p>
-Translations:
-        <a href="/first_post.html">en</a>
 
-</footer><!-- /.post-info -->      <p>Hello world from pelican!</p>
-    </div><!-- /.entry-content -->
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+  
+<span class="label label-default">Lang</span>
+	<a href="/first_post.html">en</a>
+</footer><!-- /.post-info -->                    </div>
+                    <div class="panel-body">
+                    <p>Hello world from pelican!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+        
+        <ul class="pager">
+        </ul>
+            </section>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xs-12">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a class="btn btn-default" href="/index.html">Home</a></li>
+                    <li>
+                        <a class="btn btn-default" href="/archives.html">Archives</a>
+                    </li>
+                </ul><hr />
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        ~ Follow me ~
+    </div>
+    <div class="panel-body">
+        <a href="#"><img
+            class= "social-icon" src="/theme/images/You can add links in your config file-icon.png"></img>
+        </a>
+        <a href="#"><img
+            class= "social-icon" src="/theme/images/Another social link-icon.png"></img>
+        </a>
+    </div>
+</div>
 
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        ~ Interesting Links ~
+    </div>
+    <div class="panel-body">
+        <li class="list-group-item"><a href="http://getpelican.com/">Pelican
+        </a></li>
+        <li class="list-group-item"><a href="http://python.org/">Python.org
+        </a></li>
+        <li class="list-group-item"><a href="http://jinja.pocoo.org/">Jinja2
+        </a></li>
+        <li class="list-group-item"><a href="#">You can modify those links in your config file
+        </a></li>
+    </div>
+</div>
+
+                    
+            </div>
+        </div>
+        <hr class="hidden-xs"/>
+        <div class="row">
+            <div class="footer">
+                <div class="container">
+                    <p class="footnote">©Christine Doig. Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</i></a>. Thanks to <a href="http://twitter.github.com/bootstrap/">Bootstrap</i></a>, <a href="http://subtlepatterns.com/">Subtle Patterns</i></a> and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome.</a><a href="https://github.com/chdoig/pelican-bootstrap3-lovers">Lovers Theme</a> by Christine Doig
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.pageslide.min.js"></script>
+<script src="/theme/js/prism.js"></script>
+<script>function validateForm(query)
+    {return (query.length > 0);}
+</script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
 </body>
 </html>
