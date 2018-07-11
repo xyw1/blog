@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 AUTHOR = u'yw'
 SITENAME = u'test'
 SITEURL = ''
-THEME = 'pelican-themes/lovers'
 
 PATH = 'content'
 
