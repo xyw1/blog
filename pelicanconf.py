@@ -7,7 +7,10 @@ SITENAME = u'x site'
 SITEURL = ''
 
 PATH = 'content'
-THEME = 'pelican-themes/aboutwilson'
+#THEME = 'pelican-themes/notebook'
+THEME = 'pelican-themes/neat'
+#THEME = 'pelican-themes/pelican-bootstrap3'
+#THEME = 'pelican-themes/aboutwilson'
 
 TIMEZONE = 'Asia/Shanghai'
 
