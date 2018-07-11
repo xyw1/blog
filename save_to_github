@@ -1,0 +1,4 @@
+#！/bin/bash
+git add .
+git commit -m 'modified'
+git push -u git@github.com:xyw1/blog.git master
