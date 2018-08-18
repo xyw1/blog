@@ -1,29 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-        <title>x site</title>
-        <meta charset="utf-8" />
+  <title>Archives - M site</title>
+  <meta charset='utf-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+      <link rel='stylesheet' href='/theme/css/main.css'/>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">x site <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<h1>Archives for x site</h1>
+<body itemscope itemtype='https://schema.org/WebPage' itemref='publisher-name publisher-description'>
+  <div id='header'>
+    <div class='handle'><span class='dots'></span></div>
+    <div class='content'>
+      <div itemscope itemtype='https://schema.org/Organization' itemid=''>
+        <header id='publisher'>
+          <h1><a itemprop='url' rel='home' href=''><span itemprop='name' id='publisher-name'>M site</span></a></h1>
+        </header>
+      </div>
 
-<dl>
-    <dt>Fri 10 August 2018</dt>
-    <dd><a href="/first_post.html">first_post</a></dd>
-    <dt>Wed 11 July 2018</dt>
-    <dd><a href="/20180711-diary.html">20180711 diary</a></dd>
-</dl>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+
+<nav itemscope itemtype='https://schema.org/SiteNavigationElement'>
+  <div class='container'>
+    <div class='handle'>(Pages)</div>
+    <div class='content'>
+        (<span itemprop='name'><a itemprop='url' href='/tags.html' >Tags</a></span>)
+        (<span itemprop='name'><a itemprop='url' href='/authors.html' >Authors</a></span>)
+        (<span itemprop='name'><a itemprop='url' href='/archives.html' class='active'>Archives</a></span>)
+    </div>
+  </div>
+
+    <div class='container' id='nav-categories-container'>
+      <div class='handle'>
+        {<span itemprop='name'><a itemprop='url' href='/categories.html'>Categories</a></span>}
+      </div>
+      <div class='content'>
+          <span itemprop='name' class='category'><a itemprop='url' href='/category/test.html' >test</a></span>
+      </div>
+    </div>
+
+  <div class='container' id='nav-breadcrumb-container'>
+    <div class='handle'>&gt;</div>
+    <div class='content'>
+
+
+<div itemscope itemtype='https://schema.org/BreadcrumbList'>
+      <span itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+    <a itemprop='item' href='/archives.html'><span itemprop='name'>Archives</span></a>
+    <meta itemprop='position' content='2'/>
+  </span>
+  &lt;
+
+    <span itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'>
+    <meta itemprop='name' content='Home'/>
+    <span itemprop='item' itemscope itemtype='https://schema.org/Blog'>
+      <meta itemprop='name' content='M site'/>
+      <a itemprop='url' href=''>Home</a>
+    </span>
+    <meta itemprop='position' content='1'/>
+  </span>
+
+</div>
+
+<div itemscope itemtype='https://schema.org/BreadcrumbList'>
+    <span itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'>
+    <meta itemprop='name' content='Home'/>
+    <span itemprop='item' itemscope itemtype='https://schema.org/Blog'>
+      <meta itemprop='name' content='M site'/>
+      <a itemprop='url' href=''>Home</a>
+    </span>
+    <meta itemprop='position' content='1'/>
+  </span>
+
+</div>    </div>
+  </div>
+</nav>    </div>
+  </div>
+
+  <main>
+      <h2 itemprop='headline' id='content-title'>Archives</h2>
+
+      <div itemprop='mainEntity' itemscope itemtype='https://schema.org/Blog'>
+          <dl id='period-archives'>
+      <dt><a href='/'>2018</a></dt>
+
+    <dd>
+      <dl>
+          <dt><a href='/'>August</a></dt>
+
+        <dd>
+          <ul class='days'>
+            <li>10 <a href='/first_post.html'>first_post</a></li>
+    </dd>
+      <dt><a href='/'>2018</a></dt>
+
+    <dd>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+          <dt><a href='/'>July</a></dt>
+
+        <dd>
+          <ul class='days'>
+            <li>11 <a href='/20180711-diary.html'>20180711 diary</a></li>
+          </ul>
+        </dd>
+      </dl>
+    </dd>
+  </dl>
+
+      </div>
+  </main>
+
+
+  <footer>
+<!-- Proudly powered by Pelican which takes great advantage of Python, with Apricot theme (v0.1.0) by Yu-Jie Lin. -->
+
+  </footer>
 </body>
-</html>

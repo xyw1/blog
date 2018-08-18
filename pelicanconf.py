@@ -3,13 +3,15 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'yw'
-SITENAME = u'x site'
+SITENAME = u'M site'
 SITEURL = ''
 
 PATH = 'content'
 #THEME = 'pelican-themes/notebook'
-THEME = 'pelican-themes/neat'
-#THEME = 'pelican-themes/pelican-bootstrap3'
+#HEME = 'pelican-themes/neat'
+#THEME = 'pelican-themes/alchemy'
+THEME = 'pelican-themes/apricot'
+#HEME = 'pelican-themes/pelican-bootstrap3'
 #THEME = 'pelican-themes/aboutwilson'
 
 TIMEZONE = 'Asia/Shanghai'
