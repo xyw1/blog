@@ -1,5 +1,6 @@
 #!/bin/bash
-
+if [[ $1 != 'my' ]];then
 pelican content
+fi
 ghp-import output
-git push $1 git@github.com:xyw1/xyw1.github.io.git  gh-pages:master 
+git push git@github.com:xyw1/xyw1.github.io.git  gh-pages:master 
