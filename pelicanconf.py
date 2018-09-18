@@ -10,13 +10,13 @@ PATH = 'content'
 #THEME = 'pelican-themes/notebook'
 #HEME = 'pelican-themes/neat'
 #THEME = 'pelican-themes/alchemy'
-THEME = 'pelican-themes/apricot'
+#THEME = 'pelican-themes/apricot'
 #HEME = 'pelican-themes/pelican-bootstrap3'
 #THEME = 'pelican-themes/aboutwilson'
-
+THEME = 'pelican-themes/attila'
 TIMEZONE = 'Asia/Shanghai'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = u'chinese'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
