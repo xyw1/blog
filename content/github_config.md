@@ -13,6 +13,5 @@ git config --global user.email 718766822@qq.com
 ```
 ssh-keygen
 ```
-中文
 #Copy Public Key 
 cat /home/xuyw/.ssh/id_rsa.pub
