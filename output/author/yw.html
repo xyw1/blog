@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>M site - Articles by Yw</title>
+  <title>M's site - Articles by Yw</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -78,17 +78,53 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/git-config.html" rel="bookmark" title="Permalink to Git Config">Git Config</a>
+                <h2 class="post-title"><a href="/awk-bi-ji.html" rel="bookmark" title="Permalink to awk 笔记">awk 笔记</a>
                 </h2>
                 <span class="post-meta">
                         <a href="/author/yw.html">Yw</a>
-                     | <time datetime="Tue 18 September 2018">Tue 18 September 2018</time>
+                     | <time datetime="周四 29 十一月 2018">周四 29 十一月 2018</time>
                 </span>
                 <div class="clear"></div>
             </header>
                 <section class="post-excerpt">
                     <p>
-                        Git Config git config --global user.name xuyw git config --global user.email 718766822@qq.com Generate Public Key ssh-keygen 中文 Copy Public Key cat /home/xuyw/.ssh/id_rsa.pub
+                        去掉fastq文件中的UMI（前21bp）,再将文件输出到标准输出 if else 嵌套判断 match() 函数 substr() 函数 cat $fq | awk '{ if (match($0,/^@/)) { print $0 } else if ( $0=="+" ) { print $0 } else { print substr($0,22) } }' | less
+                    </p>
+                </section>
+            </div>
+        </article>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">
+                <h2 class="post-title"><a href="/shell-string-parsing.html" rel="bookmark" title="Permalink to Shell - String Parsing">Shell - String Parsing</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="/author/yw.html">Yw</a>
+                     | <time datetime="周二 27 十一月 2018">周二 27 十一月 2018</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc #111 222 333 方法二 echo "1,2,3,4,5" | cut -d ',' -f 1,2 3 #1 2 3 echo "1,2,3,4,5" | cut -d ',' -f1 …
+                    </p>
+                </section>
+            </div>
+        </article>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">
+                <h2 class="post-title"><a href="/git-config.html" rel="bookmark" title="Permalink to Git Config">Git Config</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="/author/yw.html">Yw</a>
+                     | <time datetime="周二 18 九月 2018">周二 18 九月 2018</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        Git Config git config --global user.name xuyw git config --global user.email 718766822@qq.com Generate Public Key ssh-keygen Copy Public Key cat /home/xuyw/.ssh/id_rsa.pub
                     </p>
                 </section>
             </div>
@@ -100,7 +136,7 @@
                 </h2>
                 <span class="post-meta">
                         <a href="/author/yw.html">Yw</a>
-                     | <time datetime="Fri 10 August 2018">Fri 10 August 2018</time>
+                     | <time datetime="周五 10 八月 2018">周五 10 八月 2018</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -118,7 +154,7 @@
                 </h2>
                 <span class="post-meta">
                         <a href="/author/yw.html">Yw</a>
-                     | <time datetime="Wed 11 July 2018">Wed 11 July 2018</time>
+                     | <time datetime="周三 11 七月 2018">周三 11 七月 2018</time>
                 </span>
                 <div class="clear"></div>
             </header>
