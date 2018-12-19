@@ -38,7 +38,7 @@
 
   <link href="/shell-string-parsing.html" rel="canonical" />
 
-    <meta name="description" content="方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc #111 222 333 方法二 echo "1,2,3,4,5" | cut...">
+    <meta name="description" content="按分隔符分割 方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc 111 222 333 方法二 echo "1,2,3,4,5"...">
 
     <meta name="author" content="yw">
 
@@ -49,7 +49,7 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="M's site"/>
 <meta property="og:title" content="Shell - String Parsing"/>
-<meta property="og:description" content="方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc #111 222 333 方法二 echo "1,2,3,4,5" | cut..."/>
+<meta property="og:description" content="按分隔符分割 方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc 111 222 333 方法二 echo "1,2,3,4,5"..."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="/shell-string-parsing.html"/>
 <meta property="og:type" content="article"/>
@@ -76,7 +76,7 @@
   },
   "image": "/theme/images/post-bg.jpg",
   "url": "/shell-string-parsing.html",
-  "description": "方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc #111 222 333 方法二 echo "1,2,3,4,5" | cut..."
+  "description": "按分隔符分割 方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc 111 222 333 方法二 echo "1,2,3,4,5"..."
 }
 </script>
 </head>
@@ -129,40 +129,61 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <h1>方法一</h1>
+                <h1>按分隔符分割</h1>
+<h2>方法一</h2>
 <div class="highlight"><pre><span></span><span class="nv">a</span><span class="o">=</span><span class="s1">&#39;111|222|333&#39;</span>    
 <span class="nv">OIFS</span><span class="o">=</span><span class="nv">$IFS</span><span class="p">;</span> <span class="nv">IFS</span><span class="o">=</span><span class="s2">&quot;|&quot;</span><span class="p">;</span> <span class="nb">set</span> -- <span class="nv">$a</span><span class="p">;</span> <span class="nv">aa</span><span class="o">=</span><span class="nv">$1</span><span class="p">;</span><span class="nv">bb</span><span class="o">=</span><span class="nv">$2</span><span class="p">;</span><span class="nv">cc</span><span class="o">=</span><span class="nv">$3</span><span class="p">;</span> <span class="nv">IFS</span><span class="o">=</span><span class="nv">$OIFS</span> 
 <span class="nb">echo</span> <span class="nv">$aa</span> <span class="nv">$bb</span> <span class="nv">$cc</span> 
-<span class="c1">#111 222 333</span>
 </pre></div>
 
 
-<h1>方法二</h1>
+<p>111 222 333</p>
+<h2>方法二</h2>
 <div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;1,2,3,4,5&quot;</span> <span class="p">|</span> cut -d <span class="s1">&#39;,&#39;</span> -f <span class="m">1</span>,2 <span class="m">3</span>
-<span class="c1">#1 2 3</span>
-<span class="nb">echo</span> <span class="s2">&quot;1,2,3,4,5&quot;</span> <span class="p">|</span> cut -d <span class="s1">&#39;,&#39;</span> -f1
-<span class="c1">#1</span>
 </pre></div>
 
 
-<h1>方法三</h1>
+<p>1 2 3</p>
+<div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;1,2,3,4,5&quot;</span> <span class="p">|</span> cut -d <span class="s1">&#39;,&#39;</span> -f1
+</pre></div>
+
+
+<p>1</p>
+<h2>方法三</h2>
 <div class="highlight"><pre><span></span><span class="nv">line</span><span class="o">=</span><span class="s2">&quot;1,2,3,4,5,6&quot;</span>
 <span class="nv">OLD_IFS</span><span class="o">=</span><span class="nv">$IFS</span>
 <span class="nv">IFS</span><span class="o">=</span><span class="s1">&#39;,&#39;</span>
 <span class="nv">arr</span><span class="o">=(</span><span class="nv">$line</span><span class="o">)</span>
 <span class="nb">echo</span> <span class="si">${</span><span class="nv">arr</span><span class="p">[0]</span><span class="si">}</span> <span class="si">${</span><span class="nv">arr</span><span class="p">[1]</span><span class="si">}</span> <span class="si">${</span><span class="nv">arr</span><span class="p">[2]</span><span class="si">}</span>
-<span class="c1"># 1 2 3</span>
-<span class="k">for</span> d in <span class="si">${</span><span class="nv">arr</span><span class="p">[@]</span><span class="si">}</span>
+</pre></div>
+
+
+<p>1 2 3</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> d in <span class="si">${</span><span class="nv">arr</span><span class="p">[@]</span><span class="si">}</span>
 <span class="k">do</span>
     <span class="nb">echo</span> <span class="nv">$d</span>
 <span class="k">done</span>
-<span class="c1"># 1</span>
-<span class="c1"># 2</span>
-<span class="c1"># 3</span>
-<span class="c1"># 4</span>
-<span class="c1"># 5</span>
-<span class="c1"># 6</span>
 </pre></div>
+
+
+<p>1
+2
+3
+4
+5
+6</p>
+<h1>按索引分割</h1>
+<div class="highlight"><pre><span></span><span class="nv">str</span><span class="o">=</span><span class="m">123456</span>
+<span class="nb">echo</span> <span class="si">${</span><span class="nv">str</span><span class="p">:</span><span class="nv">1</span><span class="si">}</span>
+</pre></div>
+
+
+<p>23456</p>
+<div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="si">${</span><span class="nv">str</span><span class="p">:</span><span class="nv">0</span><span class="k">:-</span><span class="nv">1</span><span class="si">}</span>
+</pre></div>
+
+
+<p>12345</p>
             </section>
 
             <section class="post-info">

@@ -62,7 +62,7 @@
           </span>
         </nav>
         <h1 class="post-title">Category notes</h1>
-        <span class="blog-description">Posts: 3</span>
+        <span class="blog-description">Posts: 4</span>
             <div class="blog-cover cover" style="background-image: url('/theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -75,6 +75,24 @@
     <div class="extra-pagination">
     </div>
 
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">
+                <h2 class="post-title"><a href="/shell-shu-zhi-ji-suan-bi-ji.html" rel="bookmark" title="Permalink to Shell - 数值计算 笔记">Shell - 数值计算 笔记</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="/author/yw.html">Yw</a>
+                     | <time datetime="周三 19 十二月 2018">周三 19 十二月 2018</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        bc 基础用法 echo "1+2" | bc 3 echo "scale=5;1/2" | bc .50000 求max值 echo $(( 2>1?2:1 )) 2 max=`python -c 'print max(1,2)'` echo $max 2
+                    </p>
+                </section>
+            </div>
+        </article>
         <article class="post">
         <div class="inner">
             <header class="post-header">
@@ -106,7 +124,7 @@
             </header>
                 <section class="post-excerpt">
                     <p>
-                        方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc #111 222 333 方法二 echo "1,2,3,4,5" | cut -d ',' -f 1,2 3 #1 2 3 echo "1,2,3,4,5" | cut -d ',' -f1 …
+                        按分隔符分割 方法一 a='111|222|333' OIFS=$IFS; IFS="|"; set -- $a; aa=$1;bb=$2;cc=$3; IFS=$OIFS echo $aa $bb $cc 111 222 333 方法二 echo "1,2,3,4,5" | cut -d ',' -f 1,2 3 1 2 3 echo "1,2,3,4,5" | cut -d …
                     </p>
                 </section>
             </div>
